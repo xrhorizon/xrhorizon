@@ -11,22 +11,55 @@
   height: 523px;
   object-fit: cover;
 }
+.home-link1 {
+  display: contents;
+}
 .home-image2 {
+  top: 442px;
+  right: 30px;
+  width: 200px;
+  position: absolute;
+  object-fit: cover;
+  text-decoration: none;
+}
+.home-image3 {
   width: 100%;
   height: 481px;
   object-fit: cover;
 }
-.home-image3 {
+.home-link2 {
+  display: contents;
+}
+.home-image4 {
+  top: 924px;
+  left: 21px;
+  width: 200px;
+  position: absolute;
+  object-fit: cover;
+  text-decoration: none;
+}
+.home-image5 {
   width: 100%;
   height: 533px;
   object-fit: cover;
 }
-.home-image4 {
+.home-link3 {
+  display: contents;
+}
+.home-image6 {
+  top: 1456px;
+  right: 25px;
+  width: 200px;
+  position: absolute;
+  object-fit: cover;
+  text-decoration: none;
+}
+.home-image7 {
   width: 100%;
   height: 623px;
   object-fit: cover;
 }
-.home-image5 {
+.home-image8 {
   top: 601px;
   left: 317px;
   width: 424px;
@@ -34,28 +67,28 @@
   position: absolute;
   object-fit: cover;
 }
-.home-link1 {
+.home-link4 {
   left: 169px;
   color: #ffffff;
   bottom: 35px;
   position: absolute;
   text-decoration: none;
 }
-.home-link2 {
+.home-link5 {
   left: 354px;
   color: #ffffff;
   bottom: 35px;
   position: absolute;
   text-decoration: none;
 }
-.home-image6 {
+.home-image9 {
   left: 139px;
   width: 200px;
   bottom: 36px;
   position: absolute;
   object-fit: cover;
 }
-.home-link3 {
+.home-link6 {
   left: 167px;
   color: #ffffff;
   bottom: 79px;
