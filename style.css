@@ -27,7 +27,19 @@ body {
     border-radius: 5px;
 }
 
+.image-wrapper {
+    position: relative;
+}
+
+.logo-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+}
+
 /* Adding padding to the first image */
-.image-container img:first-child {
+.image-container .image-wrapper:first-child img:first-child {
     padding: 20px;
 }
