@@ -26,3 +26,8 @@ body {
     height: auto;
     border-radius: 5px;
 }
+
+/* Adding padding to the first image */
+.image-container img:first-child {
+    padding: 20px;
+}
