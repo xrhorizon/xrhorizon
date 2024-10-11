@@ -9,16 +9,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f4f4f4;
 }
 
 .image-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 0;
+    width: 100%;
     max-width: 100%;
-    padding: 10px;
 }
 
 .responsive-image {
@@ -28,18 +28,75 @@ body {
 }
 
 .image-wrapper {
-    position: relative;
+    position: relative; /* Make the wrapper relative for positioning overlay */
 }
 
+/* Position the logo on top of the first image */
 .logo-image {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 80px; /* Adjust size as needed */
+    width: 100px; /* Adjust size as needed */
     height: auto;
+    z-index: 2; /* Ensure it stays on top */
 }
 
-/* Adding padding to the first image */
-.image-container .image-wrapper:first-child img:first-child {
-    padding: 20px;
+/* Overlay text on the last image (Image 4) */
+.overlay-text {
+    position: absolute;
+    bottom: 5px; /* Move the text up from the bottom of the image */
+    left: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+    font-size: 14px;
+   /* background-color: rgba(0, 0, 0, 0.6); /* Optional: Semi-transparent background for better readability */
+}
+
+/* Add some spacing between the icon and the text */
+.overlay-text i {
+    margin-right: 0;
+}
+
+.footer-left a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 12px;
+}
+
+.footer-right a {
+    margin-left: 5px;
+    color: #333333;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footer-right a:hover {
+    color: #0077b5; /* Change color on hover, LinkedIn blue as an example */
+}
+
+.button-overlay {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Adjust button size */
+    height: auto;
+    z-index: 2; /* Ensure the button stays on top of the image */
+}
+
+.button-overlay:hover {
+    opacity: 0.8; /* Add a hover effect if you like */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .logo-image {
+        width: 60px; /* Scale down the logo for mobile */
+    }
+
+    .overlay-text {
+        font-size: 6px; /* Make the text smaller on mobile */
+        padding: 8px;
+    }
 }
